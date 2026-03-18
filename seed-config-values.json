@@ -1,0 +1,44 @@
+{
+  "replacements": [
+    {
+      "key": "base-id",
+      "value": "appF5XTR7XzrfTgqs"
+    },
+    {
+      "key": "project-name",
+      "value": "tictactoe-demo"
+    },
+    {
+      "key": "project-name-title",
+      "value": "TicTacToe Demo"
+    },
+    {
+      "key": "view",
+      "value": "Grid%20view"
+    },
+    {
+      "key": "user-table-name",
+      "value": "TicTacToeUser"
+    },
+    {
+      "key": "users-table-name",
+      "value": "TicTacToeUsers"
+    },
+    {
+      "key": "email-address-field",
+      "value": "TicTacToeEmailAddress"
+    },
+    {
+      "key": "roles-field",
+      "value": "TicTacToeRoles"
+    },
+    {
+      "key": "roles",
+      "value": "Admin,Player,Spectator,AI"
+    },
+    {
+      "key": "user-role-name",
+      "value": "Player"
+    }
+  ]
+}

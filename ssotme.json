@@ -1,0 +1,21 @@
+{
+  "ShowHidden": false,
+  "ShowAllFiles": false,
+  "ProjectSettings": [
+    {
+      "Name": "project-name",
+      "Value": "tictactoe-demo"
+    },
+    {
+      "Name": "project-name-title",
+      "Value": "TicTacToe Demo"
+    },
+    {
+      "Name": "baseId",
+      "Value": "appF5XTR7XzrfTgqs"
+    }
+  ],
+  "ProjectTranspilers": [
+    
+  ]
+}
