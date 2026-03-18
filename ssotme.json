@@ -1,21 +1,43 @@
 {
   "ShowHidden": false,
   "ShowAllFiles": false,
+  "CurrentPath": null,
+  "SSoTmeProjectFiles": null,
+  "Name": "erb-postgres-test1",
   "ProjectSettings": [
     {
-      "Name": "project-name",
-      "Value": "tictactoe-demo"
+      "Name": "project-name-title",
+      "Value": "Customer Full Name Demo"
     },
     {
-      "Name": "project-name-title",
-      "Value": "TicTacToe Demo"
+      "Name": "project-name",
+      "Value": "customer-full-name-demo"
     },
     {
       "Name": "baseId",
-      "Value": "appF5XTR7XzrfTgqs"
+      "Value": "appWrXPvXbkgQGOxt"
     }
   ],
   "ProjectTranspilers": [
-    
+    {
+      "IsSSoTTranspiler": false,
+      "Name": "httplocalhost30037",
+      "RelativePath": "effortless-rulebook",
+      "CommandLine": "airtable-to-rulebook -account airtable -o effortless-rulebook.json",
+      "IsDisabled": false
+    },
+    {
+      "IsSSoTTranspiler": false,
+      "Name": "httplocalhost30038",
+      "RelativePath": "/postgres",
+      "CommandLine": "rulebook-to-postgres -i ../effortless-rulebook/effortless-rulebook.json",
+      "IsDisabled": false
+    },
+    {
+      "Name": "init-db",
+      "RelativePath": "/postgres",
+      "CommandLine": "-exec ./init-db.sh",
+      "IsDisabled": false
+    }
   ]
 }

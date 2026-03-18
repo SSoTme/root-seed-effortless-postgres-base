@@ -70,7 +70,7 @@ $ effortless -cloneseed
 
 ```bash
 # Build/rebuild everything from your Airtable base
-$ effortless build
+$ ./build.sh
 ```
 
 This single command:
@@ -79,6 +79,33 @@ This single command:
 3. Propagates changes to PostgreSQL, docs, and all other targets
 
 Run it whenever your Airtable base evolves. Your entire stack stays synchronized.
+
+## Airtable Authentication
+
+The build process requires an Airtable Personal Access Token (PAT) to access your base.
+
+### Setup
+
+1. **Create a PAT** at [airtable.com/create/tokens](https://airtable.com/create/tokens)
+   - Add scope: `data.records:read` (and `data.records:write` if using `rulebook-to-airtable`)
+   - Grant access to your specific base
+
+2. **Set the environment variable**:
+   ```bash
+   export AIRTABLE_API_KEY="patXXXXXXXXXXXXXX"
+   ```
+
+   Or add to your shell profile (`~/.bashrc`, `~/.zshrc`):
+   ```bash
+   export AIRTABLE_API_KEY="patXXXXXXXXXXXXXX"
+   ```
+
+3. **Run the build**:
+   ```bash
+   ./build.sh
+   ```
+
+The `build.sh` script temporarily injects the key into `ssotme.json` during the build, then restores the placeholder afterward. This keeps credentials out of version control.
 
 ## Configuration
 
